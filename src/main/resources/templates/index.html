@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+    <h1> Welcome my app</h1>
+    <form action="#" th:object="${transport}">
+<!--        <input type="date" th:field="${person.birthday}"/>-->
+        <a href="http://localhost:8080/DatVe" style="color: red">DAT VE</a>
+        <select th:field="${transport.id}">
+            <option th:each="i : ${list}"
+                    th:value="${i.id}"
+                    th:text="${i.transport
+
+                    }"> <!-- lấy dữ liệu sân bay từ db truyền vào thẻ option-->
+            </option>
+        </select>
+    </form>
+</body>
+</html>

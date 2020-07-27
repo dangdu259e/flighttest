@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>result </title>
+</head>
+<body>
+    <h1 style="color: red" > Data of booking form</h1>
+        Kiểu vé
+            <p th:text="${bookingForm.itinerary_type}"></p>
+        <br>
+        Chiều đi
+            <p th:text="${bookingForm.original}"></p>
+        <br>
+        Chiều đến
+            <p th:text="${bookingForm.destination}"></p>
+        <br>
+        Ngày đi
+            <p th:text="${bookingForm.depart_date}"></p>
+        <br>
+        Ngày về
+            <p th:text="${bookingForm.return_date}"></p>
+        <br>
+        Số người lớn
+            <p th:text="${bookingForm.adult}"></p>
+        <br>
+        Số trẻ em
+            <p th:text="${bookingForm.child}"></p>
+        <br>
+        Số em bé
+            <p th:text="${bookingForm.infant}"></p>
+        <br>
+
+        <p th:text="${datasend}"></p>
+        <p th:text="${searchForm}"></p>
+
+</body>
+</html>
